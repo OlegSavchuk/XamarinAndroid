@@ -1,0 +1,16 @@
+Xamarin Android -> "Tutorial Activity DLL" Project
+
+Requirements:
+The DLL should be linkable where I expect a static class method to be called:
+
+TutorialActivity.StartActivity()
+
+I will pass only a parameter to the method as an array of Image Resources (here choose the best way accordingly with requirements), where the first element of the array will be the first image shown in tutorial, the second element will be the second image shown and so on.
+
+The method will show the new activity with just the image full screen and the dots below that represent the number of pages (images) present in the tutorial.
+
+The dots light up based on the page you're viewing and of course the user can swap left and right to display every image in the tutorial and dots will light up accordingly, swap left will be disabled on first page and swap right will be disabled on last page.
+Only on the last page will be show on lower right corner the "OK" button that will close the activity.
+
+The image resources will be in the project and not in the Tutorial Activity DLL and selection of images should happen accordingly by language if possible using the Android directory structure for resources.
+
